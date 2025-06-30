@@ -3,7 +3,7 @@ WORKDIR '/app'
 
 RUN apt-get update && \
     apt-get -y install build-essential cmake libgtest-dev && \
-    cmake /usr/src/gtest/CMakeLists.txt && \
+    cmake /usr/src/gtest/CMakeLists.txt -B /usr/src/gtest/ && \
     make -C /usr/src/gtest/ && \
     cp /usr/src/gtest/lib/libgtest*.a /usr/lib
 
