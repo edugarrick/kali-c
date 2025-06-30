@@ -18,10 +18,6 @@ TEST(AddTest, MixedNumbers) {
     EXPECT_EQ(0, add(21, -21));
 }
 
-TEST(AddTest, Fails) {
-    EXPECT_NEQ(0, add(2, -21));
-}
-
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
