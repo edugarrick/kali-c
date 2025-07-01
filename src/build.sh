@@ -25,3 +25,4 @@ sudo apt -y update && sudo apt -y install code gdb cmake
 
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.cpptools-extension-pack
+code --install-extension ms-python.python
