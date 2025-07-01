@@ -23,6 +23,9 @@ sudo apt -y update && sudo apt -y install code gdb cmake
 	&& sudo apt update \
 	&& sudo apt install gh -y
 
+# Install VSCode extensions
+# Ref: https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_command-line-extension-management
+
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-python.python
