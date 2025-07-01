@@ -7,7 +7,7 @@ sudo apt update
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-sudo apt -y update && sudo apt -y install code gdb
+sudo apt -y update && sudo apt -y install code gdb cmake
 
 
 # Install GitHub Cli
@@ -23,5 +23,5 @@ sudo apt -y update && sudo apt -y install code gdb
 	&& sudo apt update \
 	&& sudo apt install gh -y
 
-sudo code --install-extension ms-vscode.cpptools
-sudo code --install-extension ms-vscode.cpptools-extension-pack
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-vscode.cpptools-extension-pack
