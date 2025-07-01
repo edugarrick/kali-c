@@ -24,3 +24,4 @@ sudo apt -y update && sudo apt -y install code gdb
 	&& sudo apt install gh -y
 
 sudo code --install-extension ms-vscode.cpptools
+sudo code --install-extension ms-vscode.cpptools-extension-pack
